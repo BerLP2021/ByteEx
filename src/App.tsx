@@ -1,12 +1,15 @@
-import './App.css'
+import Header from './components/header/Header'
+import Hero from './components/hero/Hero'
+import TopBanner from './components/topBanner/TopBanner'
 
 function App() {
-
   return (
     <>
-      <div className='grid place-items-center h-screen w-screen text-2xl'>
-        Hello world!
-      </div>
+      <TopBanner />
+      <Header />
+      <main>
+        <Hero />
+      </main>
     </>
   )
 }
