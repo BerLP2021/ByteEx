@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import { useEffect, useState } from 'react'
 import { Splide, SplideSlide, SplideTrack } from '@splidejs/react-splide'
 import { Intersection } from '@splidejs/splide-extension-intersection'
 import ReviewCard from '../reviews/ReviewCard'
@@ -6,9 +6,11 @@ import Icon from '../ui/Icon/Icon'
 import Button from '../ui/button'
 import Stars from '../ui/stars'
 import brandsMockData from '../../data/brands.json'
-import productsMockData from '../../data/products.json'
-import './index.css'
 import { cn } from '../../utils/cn'
+import productsMockData from '../../data/products.json'
+import Loading from '../ui/loading'
+import './index.css'
+
 type Props = {
   totalReviews: number
   userReviewDemo: IReview
@@ -41,18 +43,20 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
   }, [])
 
   if (!brands.length || !product) {
-    return <div>Loading...</div>
+    return <Loading />
   }
 
   return (
-    <section className="relative container">
+    <section className="container2 relative">
       <div className="bg-[linear-gradient(180deg,#F9F0E5_0%,rgba(249,240,229,0.18)43.05%,rgba(249,240,229,0)100%)] pb-[43px] md:pb-[86px]">
         <ReviewCard
           reviewData={userReviewDemo}
           totalReviews={totalReviews}
           className="absolute mx-auto max-w-[388px] -translate-y-1/2 px-[11px] py-4 md:max-w-[416px] md:px-5"
         />
-        <h2 className="py-[92px_17px] md:pt-[77px]">as seen in</h2>
+        <h2 className="py-[92px_17px] text-[#868787] md:pt-[77px]">
+          as seen in
+        </h2>
         <div className="w-full px-4 md:max-w-[1255px]">
           <Splide
             aria-label="featured brands"

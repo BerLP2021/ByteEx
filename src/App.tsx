@@ -6,6 +6,8 @@ import TopBanner from './components/topBanner/TopBanner'
 
 import usersReviewsMockData from './data/reviews.json'
 import benefitsMockData from './data/benefits.json'
+import About from './components/about'
+import Loading from './components/ui/loading'
 
 function App() {
   const [reviews, setReviews] = useState<IReview[]>([])
@@ -33,8 +35,9 @@ function App() {
             benefitsData={benefits}
           />
         ) : (
-          <div>Loading...</div>
+          <Loading />
         )}
+        <About />
       </main>
     </>
   )
