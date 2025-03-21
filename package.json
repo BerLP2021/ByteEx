@@ -11,6 +11,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide-extension-intersection": "^0.2.0",
     "@tailwindcss/postcss": "^4.0.14",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",

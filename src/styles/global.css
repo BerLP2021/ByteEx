@@ -1,58 +1,61 @@
 @import 'tailwindcss';
-
+@import '@splidejs/react-splide/css';
 @font-face {
-    font-family: 'Suisse Intl';
-    src: url('/src/assets/fonts/suisse-intl-regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Suisse Intl';
+  src: url('/src/assets/fonts/suisse-intl-regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 @font-face {
-    font-family: 'Sofia Pro';
-    src: url('/src/assets/fonts/sofia-pro-regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'Sofia Pro';
+  src: url('/src/assets/fonts/sofia-pro-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
 #root {
-    font-family: 'Sofia Pro', sans-serif;
-    margin: 0 auto;
-    text-align: center;
+  font-family: 'Sofia Pro', sans-serif;
+  margin: 0 auto;
+  text-align: center;
 }
 
 @layer base {
-    :root {
-        --foreground-rgb: 0, 0, 0;
-        --background-start-rgb: 214, 219, 220;
-        --background-end-rgb: 255, 255, 255;
-        --background-beige-rgb: 249, 240, 229;
-    }
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 214, 219, 220;
+    --background-end-rgb: 255, 255, 255;
+    --background-beige-rgb: 249, 240, 229;
+  }
 }
 
 @theme {
-    --animate-marquee: marquee 1s ease-in-out 3s both;
-    --color-blue: #01005b;
+  --animate-marquee: marquee 1s ease-in-out 3s both;
+  --color-blue: #01005b;
+  --color-text-1: #676869;
+  --color-text-2: #6c6c6c;
+  --color-text-3: #828282;
 
-    @keyframes marquee {
-        from {
-            translate: 0 -100%;
-        }
-
-        to {
-            translate: 0 0;
-            opacity: 100;
-        }
+  @keyframes marquee {
+    from {
+      translate: 0 -100%;
     }
+
+    to {
+      translate: 0 0;
+      opacity: 100;
+    }
+  }
 }
 
 @layer utilities {
-    .bg-beige {
-        background-color: rgb(var(--background-beige-rgb));
-    }
-    .font-suisse {
-        font-family: 'Suisse Intl', sans-serif;
-    }
-    .container {
-        @apply mx-auto md:max-w-[1464px] max-w-[500px];
-    }
+  .bg-beige {
+    background-color: rgb(var(--background-beige-rgb));
+  }
+  .font-suisse {
+    font-family: 'Suisse Intl', sans-serif;
+  }
+  .container {
+    @apply mx-auto max-w-[500px] md:max-w-[1464px];
+  }
 }
