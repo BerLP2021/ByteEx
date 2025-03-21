@@ -4,12 +4,12 @@ import { Intersection } from '@splidejs/splide-extension-intersection'
 import ReviewCard from '../reviews/ReviewCard'
 import Icon from '../ui/Icon/Icon'
 import Button from '../ui/button'
-import Stars from '../ui/stars'
 import brandsMockData from '../../data/brands.json'
 import { cn } from '../../utils/cn'
 import productsMockData from '../../data/products.json'
 import Loading from '../ui/loading'
 import './index.css'
+import TotalReviewsStr from '../ui/totalReviewsStr'
 
 type Props = {
   totalReviews: number
@@ -18,8 +18,6 @@ type Props = {
 }
 
 function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
-  const totalReviewsStr = `Over ${Math.floor(totalReviews / 10) * 10}+ 5 Star Reviews Online`
-
   const [brands, setBrands] = useState<
     {
       id: string
@@ -87,7 +85,7 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
         </div>
         <div className="mt-[42px] grid items-center gap-x-10 md:mt-[113px] md:grid-cols-[44.7%_1fr] md:px-[10%_5%] lg:items-start">
           <div className="col-span-1 contents w-full md:block md:px-0">
-            <h2 className="-order-2 px-12 text-[32px] leading-[40px] tracking-[4%] text-(--color-blue) md:px-0 md:text-left">
+            <h2 className="section-title -order-2 px-12 md:px-0 md:text-left">
               Loungewear you can be proud of.
             </h2>
             <ul className="mt-[61px] space-y-[17px] md:mt-[74px]">
@@ -116,12 +114,7 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
                 <a href="#">Customize Your Outfit</a>
               </Button>
 
-              <div className="mt-[11px] flex items-center gap-2">
-                <Stars amount={5} className="h-[13px] w-[80px] gap-[3px]" />
-                <p className="font-suisse flex-1 text-[12px] leading-[20px] text-(--color-text-3)">
-                  {totalReviewsStr}
-                </p>
-              </div>
+              <TotalReviewsStr totalReviews={totalReviews} />
             </div>
           </div>
           <div className="-order-1 col-span-1 mt-[25px] flex flex-col items-center justify-center md:order-0 md:mt-0">

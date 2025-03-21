@@ -8,6 +8,7 @@ import usersReviewsMockData from './data/reviews.json'
 import benefitsMockData from './data/benefits.json'
 import About from './components/about'
 import Loading from './components/ui/loading'
+import Description from './components/description'
 
 function App() {
   const [reviews, setReviews] = useState<IReview[]>([])
@@ -38,6 +39,7 @@ function App() {
           <Loading />
         )}
         <About />
+        <Description totalReviews={fiveStarsReviews.length * 97} />
       </main>
     </>
   )

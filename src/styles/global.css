@@ -62,4 +62,7 @@
   .all * {
     @apply outline outline-red-500;
   }
+  .section-title {
+    @apply text-[32px] leading-[40px] tracking-[4%] text-(--color-blue);
+  }
 }

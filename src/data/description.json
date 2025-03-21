@@ -1,0 +1,20 @@
+[
+  {
+    "id": "0",
+    "title": "You save.",
+    "description": "Browse our comfort sets and save 15% when you bundle.",
+    "icon": "waste"
+  },
+  {
+    "id": "1",
+    "title": "We ship.",
+    "description": "We ship your items within 1-2 days of receiving your order.",
+    "icon": "shipping"
+  },
+  {
+    "id": "2",
+    "title": "You enjoy!",
+    "description": "Wear hernest around the house, out on the town, or in bed.",
+    "icon": "day-night"
+  }
+]
