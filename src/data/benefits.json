@@ -1,0 +1,26 @@
+[
+    {
+        "id": "0",
+        "title": "Ethically sourced.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+        "icon": "waste"
+    },
+    {
+        "id": "1",
+        "title": "Responsibly made.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+        "icon": "leaf"
+    },
+    {
+        "id": "2",
+        "title": "Made for living in.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+        "icon": "day-night"
+    },
+    {
+        "id": "3",
+        "title": "Unimaginably comfortable.",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+        "icon": "comfort"
+    }
+]

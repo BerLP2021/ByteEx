@@ -1,0 +1,14 @@
+[
+    {
+        "id": "0",
+        "title": "White Robe",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+        "images": [
+            "images/hero/hero-1.webp",
+            "images/hero/hero-2.webp",
+            "images/hero/hero-3.webp",
+            "images/reviews/Rectangle 754.jpg",
+            "images/reviews/Rectangle 742.jpg"
+        ]
+    }
+]

@@ -1,0 +1,27 @@
+[
+    {
+        "id": "0",
+        "src": "images/brands/canada.png",
+        "alt": "brand image 1"
+    },
+    {
+        "id": "1",
+        "src": "images/brands/eco.png",
+        "alt": "brand image 1"
+    },
+    {
+        "id": "2",
+        "src": "images/brands/harris.png",
+        "alt": "brand image 1"
+    },
+    {
+        "id": "3",
+        "src": "images/brands/hub.png",
+        "alt": "brand image 1"
+    },
+    {
+        "id": "4",
+        "src": "images/brands/trend.png",
+        "alt": "brand image 1"
+    }
+]
