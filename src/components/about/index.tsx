@@ -14,7 +14,7 @@ function About() {
   return (
     <section className="container2">
       <div className="flex flex-col items-center justify-center bg-[#F0EEEF] px-[11%] py-[39px_53px] lg:flex-row lg:items-start lg:gap-[clamp(40px,calc(40px+131*(100vw-768px)/696),171px)] lg:px-0 lg:py-[113px_92px]">
-        <div className="relative mt-[51px] basis-[58%] md:w-[50%] lg:mt-5 lg:w-full lg:max-w-[380px]">
+        <div className="relative mt-[51px] w-[58%] md:basis-[50%] lg:mt-5 lg:w-full lg:max-w-[380px]">
           <img
             src={about.images.top}
             alt=""
@@ -32,7 +32,7 @@ function About() {
           />
         </div>
         <div className="contents max-w-[620px] text-left lg:block lg:basis-[42vw]">
-          <h2 className="-order-2 text-center text-[32px] leading-[40px] tracking-[4%] text-(--color-blue) lg:text-left">
+          <h2 className="section-title -order-2 text-center lg:text-left">
             {about.title}
           </h2>
           <div className="mt-[75px] space-y-[23px] lg:mt-[31px] lg:w-full">
