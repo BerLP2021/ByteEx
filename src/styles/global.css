@@ -1,5 +1,6 @@
 @import 'tailwindcss';
 @import '@splidejs/react-splide/css';
+
 @font-face {
   font-family: 'Suisse Intl';
   src: url('/src/assets/fonts/suisse-intl-regular.ttf') format('truetype');
@@ -55,7 +56,10 @@
   .font-suisse {
     font-family: 'Suisse Intl', sans-serif;
   }
-  .container {
-    @apply mx-auto max-w-[500px] md:max-w-[1464px];
+  .container2 {
+    @apply mx-auto md:max-w-[1464px];
+  }
+  .all * {
+    @apply outline outline-red-500;
   }
 }

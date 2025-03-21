@@ -4,7 +4,7 @@ import hero from '../../data/heroImg.json'
 
 function Hero() {
   return (
-    <section className="container">
+    <section className="container2">
       <div className="flex flex-col items-center gap-[6.15%] px-6 py-[0px_86px] text-(--color-text-1) md:flex-row md:items-start md:px-[7.24%_4.25%] md:py-[29px_86px]">
         <div className="contents w-full max-w-[78%] flex-col items-center md:flex md:max-w-[37.5%] md:items-start">
           <h1 className="-order-2 text-[clamp(26px,calc(26px+12*(100vw-768px)/696),38px)] leading-[1.2] text-(--color-blue) md:order-0 md:text-left">
