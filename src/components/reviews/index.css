@@ -1,0 +1,6 @@
+.splide__pagination__page.reviews__pagination-page.is-active {
+  @apply bg-[#000];
+}
+.splide__pagination.reviews__pagination {
+  @apply bottom-[-2rem];
+}
