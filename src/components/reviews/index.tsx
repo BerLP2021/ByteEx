@@ -42,7 +42,7 @@ function Reviews({ reviewsData }: Props) {
                 768: {
                   perPage: 4,
                   gap: 4,
-                  heightRatio: 1,
+                  pauseOnHover: false,
                 },
               },
             }}
@@ -77,7 +77,7 @@ function Reviews({ reviewsData }: Props) {
                 768: {
                   perPage: 4,
                   gap: 4,
-                  heightRatio: 1,
+                  pauseOnHover: false,
                 },
               },
             }}

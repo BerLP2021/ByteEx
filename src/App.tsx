@@ -10,6 +10,7 @@ import About from './components/about'
 import Loading from './components/ui/loading'
 import Description from './components/description'
 import Reviews from './components/reviews'
+import Faq from './components/faq'
 
 function App() {
   const [reviews, setReviews] = useState<IReview[]>([])
@@ -42,6 +43,7 @@ function App() {
         <About />
         <Description totalReviews={fiveStarsReviews.length * 97} />
         <Reviews reviewsData={reviews} />
+        <Faq totalReviews={fiveStarsReviews.length * 97} />
       </main>
     </>
   )

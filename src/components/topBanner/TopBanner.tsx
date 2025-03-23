@@ -1,6 +1,6 @@
 function TopBanner() {
   return (
-    <div className="bg-beige font-suisse animate-marquee flex items-center justify-center gap-4 text-[11px] leading-[35px] tracking-[8%] text-[#565656] opacity-0">
+    <div className="bg-beige font-suisse animate-fade-in-down flex items-center justify-center gap-4 text-[11px] leading-[35px] tracking-[8%] text-[#565656] opacity-0">
       <div className="hidden md:block">
         CONSCIOUSLY MADE BUTTER SOFT STAPLES FOR EVERY DAY (OR NIGHT)
       </div>
