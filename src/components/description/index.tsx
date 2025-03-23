@@ -17,7 +17,7 @@ function Description({ totalReviews }: Props) {
         <h2 className="mt-[57px] md:mt-[79px]">Comfort made easy</h2>
         <Splide
           hasTrack={false}
-          aria-label="models slider"
+          aria-label="slider with principles of our work"
           className="w-full max-w-[1097px]"
           options={{
             type: 'loop',
@@ -52,13 +52,13 @@ function Description({ totalReviews }: Props) {
         >
           <SplideTrack>
             {description.map((item, index) => (
-              <SplideSlide key={index}>
+              <SplideSlide
+                key={index}
+                className="odd:bg-[#F0EEEF] even:bg-[#F9F0E6]"
+              >
                 <DescriptionCard
                   data={item}
-                  className={cn(
-                    'mx-auto h-full w-[81.8%] md:aspect-[1.07] md:w-full',
-                    index % 2 ? 'bg-[#F0EEEF]' : 'bg-[#F9F0E6]',
-                  )}
+                  className="mx-auto h-full w-[81.8%] md:aspect-[1.07] md:w-full"
                 />
               </SplideSlide>
             ))}
