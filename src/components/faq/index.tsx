@@ -22,7 +22,7 @@ function Faq({ totalReviews }: Props) {
     <section className="container2">
       <div className="mt-[68px] flex flex-col items-center justify-center lg:m-[clamp(40px,calc(40px+170*(100vw-1024px)/440),210px)_clamp(40px,calc(40px+100*(100vw-1024px)/440),140px)] lg:mt-[109px] lg:flex-row lg:items-start lg:gap-[clamp(40px,calc(40px+80*(100vw-1024px)/440),120px)]">
         <div className="w-full max-w-[600px] px-11 lg:px-0">
-          <h2 className="section-title lg:text-left">
+          <h2 className="section-title lowercase md:normal-case lg:text-left">
             Frequently asked questions.
           </h2>
           <Accordion type="single" collapsible className="mt-9 lg:mt-12">
@@ -32,7 +32,7 @@ function Faq({ totalReviews }: Props) {
                 key={index}
                 className={index === 0 ? 'border-t' : ''}
               >
-                <AccordionTrigger className="text-lg leading-6 tracking-[4%] text-(--color-blue)">
+                <AccordionTrigger className="text-lg leading-6 tracking-[4%] text-(--color-blue) lowercase md:normal-case">
                   {item.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-[14px] leading-[20px] tracking-[3%] text-(--color-text-1) lg:text-[15px] lg:leading-[22px]">

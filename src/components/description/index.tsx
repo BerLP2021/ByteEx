@@ -54,7 +54,7 @@ function Description({ totalReviews }: Props) {
             {description.map((item, index) => (
               <SplideSlide
                 key={index}
-                className="odd:bg-[#F0EEEF] even:bg-[#F9F0E6]"
+                className="odd:*:bg-[#F0EEEF] even:*:bg-[#F9F0E6]"
               >
                 <DescriptionCard
                   data={item}

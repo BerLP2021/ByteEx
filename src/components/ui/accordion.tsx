@@ -36,12 +36,12 @@ const AccordionTrigger = React.forwardRef<
       {children}
       <div>
         <Plus
-          size={'30px'}
-          className="plus h-4 w-4 shrink-0 transition-transform duration-200"
+          size={'24px'}
+          className="animate-rotate-right plus shrink-0 transition-transform duration-200"
         />
         <Minus
-          size={'30px'}
-          className="minus hidden h-4 w-4 shrink-0 transition-transform duration-200"
+          size={'24px'}
+          className="animate-rotate-left minus hidden shrink-0 transition-transform duration-200"
         />
       </div>
     </AccordionPrimitive.Trigger>

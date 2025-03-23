@@ -1,0 +1,25 @@
+{
+    "title": "Find something you love.",
+    "description_desktop": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce lobortis sapien facilisis tincidunt pellentesque. In eget ipsum et felis finibus consequat.",
+    "description_mobile": "Click below to browse our collection!",
+    "collections": [
+        {
+            "id": "0",
+            "link": "#",
+            "collection_name": "Lorem ipsum",
+            "image": "images/CTA/1.webp"
+        },
+        {
+            "id": "1",
+            "link": "#",
+            "collection_name": "Ipsum dolor",
+            "image": "images/CTA/2.webp"
+        },
+        {
+            "id": "2",
+            "link": "#",
+            "collection_name": "Sit amet",
+            "image": "images/CTA/3.webp"
+        }
+    ]
+}

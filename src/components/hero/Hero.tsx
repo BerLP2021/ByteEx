@@ -12,19 +12,19 @@ function Hero() {
           </h1>
           <ul className="mt-6 flex flex-col gap-7 text-left text-[13px] leading-[18px] tracking-[3%] md:gap-6 md:text-[15px] md:leading-[23px]">
             <li className="flex items-center gap-[13px]">
-              <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#F9F0E5]">
+              <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#F9F0E5] text-(--color-blue)">
                 <Icon name="day-night" />
               </div>
               Beautiful, comfortable loungewear for day or night.
             </li>
             <li className="flex items-center gap-[13px]">
-              <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#F9F0E5]">
+              <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#F9F0E5] text-(--color-blue)">
                 <Icon name="waste" />
               </div>
               No wasteful extras, like tags or plastic packaging.
             </li>
             <li className="flex items-center gap-[13px]">
-              <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#F9F0E5]">
+              <div className="flex h-[40px] w-[40px] shrink-0 items-center justify-center rounded-full bg-[#F9F0E5] text-(--color-blue)">
                 <Icon name="comfort" />
               </div>
               Our signature fabric is incredibly comfortable — unlike anything

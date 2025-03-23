@@ -40,17 +40,17 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
     }, 500)
   }, [])
 
-  if (!brands.length || !product) {
+  if (!brands.length || !product || !userReviewDemo || !benefitsData.length) {
     return <Loading />
   }
 
   return (
     <section className="container2 relative">
-      <div className="bg-[linear-gradient(180deg,#F9F0E5_0%,rgba(249,240,229,0.18)43.05%,rgba(249,240,229,0)100%)] pb-[43px] md:pb-[86px]">
+      <div className="bg-[linear-gradient(180deg,#F9F0E5_0%,rgba(249,240,229,0.18)43.05%,rgba(249,240,229,0)100%)] pb-[43px] lg:pb-[86px]">
         <ReviewCard
           reviewData={userReviewDemo}
           totalReviews={totalReviews}
-          className="absolute mx-auto max-w-[388px] -translate-y-1/2 px-[11px] py-4 md:max-w-[416px] md:px-5"
+          className="absolute left-[50%] w-full max-w-[388px] -translate-x-1/2 -translate-y-1/2 px-[11px] py-4 md:left-[7.25%] md:translate-x-0 lg:max-w-[416px] lg:px-5"
         />
         <h2 className="py-[92px_17px] text-[#868787] md:pt-[77px]">
           as seen in
@@ -83,16 +83,16 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
             ))}
           </Splide>
         </div>
-        <div className="mt-[42px] grid items-center gap-x-10 md:mt-[113px] md:grid-cols-[44.7%_1fr] md:px-[10%_5%] lg:items-start">
-          <div className="col-span-1 contents w-full md:block md:px-0">
-            <h2 className="section-title -order-2 px-12 md:px-0 md:text-left">
+        <div className="mt-[42px] grid items-center gap-x-10 lg:mt-[113px] lg:grid-cols-[44.7%_1fr] lg:items-start lg:px-[10%_5%]">
+          <div className="col-span-1 contents w-full lg:block lg:px-0">
+            <h2 className="section-title -order-2 px-12 lg:px-0 lg:text-left">
               Loungewear you can be proud of.
             </h2>
-            <ul className="mt-[61px] space-y-[17px] md:mt-[74px]">
+            <ul className="mt-[61px] space-y-[17px] lg:mt-[74px]">
               {benefitsData.map((item, index) => (
                 <li
                   key={index}
-                  className="mx-auto max-w-[78.5%] items-center space-y-5 gap-x-8 gap-y-1 text-center md:mx-0 md:grid md:max-w-none md:grid-cols-[42px_auto] md:space-y-0 md:text-left"
+                  className="mx-auto max-w-[57%] items-center space-y-5 gap-x-8 gap-y-1 text-center lg:mx-0 lg:grid lg:max-w-[78.5%] lg:max-w-none lg:grid-cols-[42px_auto] lg:space-y-0 lg:text-left"
                 >
                   <div className="bg-beige mx-auto mt-2 flex aspect-square w-[42px] items-center justify-center self-start rounded-full">
                     <Icon name={item.icon} />
@@ -104,7 +104,7 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
                     {item.description}
                   </p>
                   {benefitsData.length - 1 !== index && (
-                    <hr className="mx-auto my-[41px_31px] w-full max-w-[334px] text-[#c4c4c450] md:hidden" />
+                    <hr className="mx-auto my-[41px_31px] w-full max-w-[334px] text-[#c4c4c450] lg:hidden" />
                   )}
                 </li>
               ))}
@@ -117,7 +117,7 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
               <TotalReviewsStr totalReviews={totalReviews} />
             </div>
           </div>
-          <div className="-order-1 col-span-1 mt-[25px] flex flex-col items-center justify-center md:order-0 md:mt-0">
+          <div className="-order-1 col-span-1 mt-[25px] flex flex-col items-center justify-center lg:order-0 lg:mt-0">
             <Splide
               hasTrack={false}
               aria-label="models slider"
@@ -175,7 +175,7 @@ function Benefits({ userReviewDemo, totalReviews, benefitsData }: Props) {
                 </button>
               </div>
             </Splide>
-            <p className="font-suisse mt-[7px] text-[13px] leading-[22px] tracking-[3%] text-(--color-text-1) md:mt-[13px]">
+            <p className="font-suisse mt-[7px] text-[13px] leading-[22px] tracking-[3%] text-(--color-text-1) lg:mt-[13px]">
               {product.title}
             </p>
           </div>
