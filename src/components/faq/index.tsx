@@ -15,7 +15,7 @@ function Faq({ totalReviews }: Props) {
   useEffect(() => {
     setTimeout(() => {
       setFaq(faqData)
-    })
+    }, 500)
   })
 
   return (

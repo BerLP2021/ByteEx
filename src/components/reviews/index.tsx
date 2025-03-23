@@ -60,7 +60,7 @@ function Reviews({ reviewsData }: Props) {
           </Splide>
           <Splide
             hasTrack={false}
-            aria-label="models slider overflow-hidden"
+            aria-label="models slider"
             className="mt-1 w-full md:mt-[5px]"
             options={{
               type: 'loop',
@@ -97,7 +97,7 @@ function Reviews({ reviewsData }: Props) {
         <div className="mt-[38px] md:mt-[77px] md:px-6">
           <Splide
             hasTrack={false}
-            aria-label="models slider"
+            aria-label="reviews slider"
             className="mx-auto w-[353px] md:w-full md:max-w-[1258px]"
             options={{
               perPage: 3,
