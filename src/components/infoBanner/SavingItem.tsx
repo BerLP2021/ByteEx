@@ -47,10 +47,10 @@ function SavingItem({
         className,
       )}
     >
-      <div className="mx-auto mb-[13px] flex aspect-square w-[42px] items-center justify-center self-start rounded-full bg-[#E2E2E2] md:bg-[#E4E4E4]">
+      <div className="mx-auto mb-[13px] flex aspect-square w-[42px] items-center justify-center self-start rounded-full bg-[#E2E2E2] text-[#6160D2] md:bg-[#E4E4E4] md:text-(--color-blue)">
         <Icon name={iconType} className="h-[42px] w-[42px]" />
       </div>
-      <span className="text-[22px] leading-[20px] font-semibold tracking-[2%] text-nowrap overflow-ellipsis text-(--color-blue)">
+      <span className="text-[22px] leading-[20px] font-semibold tracking-[2%] text-nowrap overflow-ellipsis text-[#2A2996] md:text-(--color-blue)">
         <NumberTicker
           ref={tickerRef}
           from={Math.floor(value / 3)}
@@ -65,7 +65,7 @@ function SavingItem({
         />{' '}
         {measureString}
       </span>
-      <p className="text-[14px] leading-[20px] tracking-[3%] text-nowrap overflow-ellipsis text-(--color-blue)">
+      <p className="text-[14px] leading-[20px] tracking-[3%] text-nowrap overflow-ellipsis text-[#2A2996] md:text-(--color-blue)">
         {description}
       </p>
     </motion.div>

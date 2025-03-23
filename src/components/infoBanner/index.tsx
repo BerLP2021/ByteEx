@@ -18,7 +18,7 @@ function InfoBanner() {
   return (
     <section className="container2">
       <div className="mt-[52px] bg-[#F0EEEF] py-[52px_32px] md:mt-[88px] md:py-[39px_56px]">
-        <h2 className="text-[25px] leading-[40px] tracking-[4%] text-(--color-blue)">
+        <h2 className="text-[25px] leading-[40px] tracking-[4%] text-[#2A2996] md:text-(--color-blue)">
           Our total green impact
         </h2>
         <div className="md:divider-y-0 mt-[22px] flex flex-col items-center divide-y border-[#C4C4C450] md:mt-[18px] md:flex-row md:justify-center md:divide-x md:divide-y-0">

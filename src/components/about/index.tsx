@@ -32,7 +32,7 @@ function About() {
           />
         </div>
         <div className="contents max-w-[620px] text-left lg:block lg:basis-[42vw]">
-          <h2 className="section-title -order-2 text-center lg:text-left">
+          <h2 className="section-title -order-2 text-center !text-[#2A2996] md:!text-(--color-blue) lg:text-left">
             {about.title}
           </h2>
           <div className="mt-[75px] space-y-[23px] lg:mt-[31px] lg:w-full">

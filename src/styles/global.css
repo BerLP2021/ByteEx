@@ -36,6 +36,8 @@
   --animate-fade-in-down: fade-in-down 1s ease-in-out 3s both;
   --animate-accordion-down: accordion-down 0.4s ease-out;
   --animate-accordion-up: accordion-up 0.4s ease-out;
+  --animate-rotate-right: rotate-right 0.4s ease-out;
+  --animate-rotate-left: rotate-left 0.4s ease-out;
   --color-blue: #01005b;
   --color-text-1: #676869;
   --color-text-2: #6c6c6c;
@@ -68,6 +70,16 @@
       height: 0;
     }
   }
+  @keyframes rotate-right {
+    100% {
+      rotate: 180deg;
+    }
+  }
+  @keyframes rotate-left {
+    100% {
+      rotate: -360deg;
+    }
+  }
 }
 
 @layer utilities {
@@ -84,7 +96,7 @@
     @apply outline outline-red-500;
   }
   .section-title {
-    @apply text-[32px] leading-[40px] tracking-[4%] text-(--color-blue);
+    @apply text-[26px] md:text-[32px] leading-[40px] tracking-[4%] text-(--color-blue);
   }
 }
 

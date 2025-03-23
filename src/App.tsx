@@ -7,11 +7,11 @@ import TopBanner from './components/topBanner/TopBanner'
 import usersReviewsMockData from './data/reviews.json'
 import benefitsMockData from './data/benefits.json'
 import About from './components/about'
-import Loading from './components/ui/loading'
 import Description from './components/description'
 import Reviews from './components/reviews'
 import Faq from './components/faq'
 import InfoBanner from './components/infoBanner'
+import FinalCTA from './components/finalCTA'
 
 function App() {
   const [reviews, setReviews] = useState<IReview[]>([])
@@ -32,20 +32,17 @@ function App() {
       <Header />
       <main>
         <Hero />
-        {reviews.length > 0 && benefits.length > 0 ? (
-          <Benefits
-            totalReviews={fiveStarsReviews.length * 97}
-            userReviewDemo={reviews[0]}
-            benefitsData={benefits}
-          />
-        ) : (
-          <Loading />
-        )}
+        <Benefits
+          totalReviews={fiveStarsReviews.length * 97}
+          userReviewDemo={reviews[0]}
+          benefitsData={benefits}
+        />
         <About />
         <Description totalReviews={fiveStarsReviews.length * 97} />
         <Reviews reviewsData={reviews} />
         <Faq totalReviews={fiveStarsReviews.length * 97} />
         <InfoBanner />
+        <FinalCTA totalReviews={fiveStarsReviews.length * 97} />
       </main>
     </>
   )
