@@ -116,14 +116,14 @@ function Reviews({ reviewsData }: Props) {
               },
             }}
           >
-            <SplideTrack className="mx-auto w-[85.2%] md:w-[87.2%]">
+            <SplideTrack className="mx-auto w-[86%] md:w-[88%] !p-2">
               {reviewsData.map((item, index) => (
                 <SplideSlide key={index}>
                   <ReviewCard
                     key={item.id}
                     reviewData={item}
                     isExpended={true}
-                    className="mx-auto p-[30px] md:mx-0 md:w-full md:px-[8%]"
+                    className="mx-auto p-[30px] md:mx-0 md:w-full md:px-[8%] cursor-grab user-select-none"
                   />
                 </SplideSlide>
               ))}

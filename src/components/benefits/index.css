@@ -1,3 +1,6 @@
 .splide__pagination.custom__pagination {
   @apply bottom-[-1.5rem];
 }
+.splide-thumbnails>.splide__track--nav>.splide__list>.splide__slide.is-active {
+  @apply outline-[#fff] outline-2 outline-offset-[-2px] border-0;
+}

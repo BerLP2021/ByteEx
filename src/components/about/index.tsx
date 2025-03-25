@@ -45,7 +45,7 @@ function About() {
               </p>
             ))}
           </div>
-          <Button variant="cta" className="mt-8 hidden lg:block">
+          <Button variant="cta" className="mt-8 hidden lg:flex">
             <a href="#">Customize Your Outfit</a>
           </Button>
         </div>
