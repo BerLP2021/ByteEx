@@ -40,7 +40,7 @@ function Hero() {
           {hero.map((item, index) => (
             <div
               key={index}
-              className="relative w-[28.8%] shrink-0 not-nth-3:-z-1 nth-2:mr-[-6%] nth-3:w-[36%] nth-4:ml-[-6%]"
+              className="nth-3:border-2 border-white relative w-[28.8%] shrink-0 not-nth-3:-z-1 nth-2:mr-[-6%] nth-3:w-[36%] nth-4:ml-[-6%]"
             >
               <img src={item.src} alt={item.alt} className="shrink-0" />
             </div>

@@ -138,7 +138,7 @@ useEffect(() => {
             }}
           >
             {brands.map((item, index) => (
-              <SplideSlide key={index}>
+              <SplideSlide key={index} className='cursor-grab'>
                 <img src={item.src} alt={item.alt} className="mx-[0px]" />
               </SplideSlide>
             ))}
@@ -185,7 +185,7 @@ useEffect(() => {
                   <div className="splide__track">
                     <ul className="splide__list">
                       {product.images.map((slide) => (
-                        <li key={slide} className="splide__slide">
+                        <li key={slide} className="splide__slide cursor-grab">
                           <img src={slide} alt={`Slide ${product.title}`} className='mx-auto h-full w-[70%] lg:w-[85%] object-cover' />
                         </li>
                       ))}
